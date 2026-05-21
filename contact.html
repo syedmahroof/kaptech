@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact KAPTECH Tray and Pipe Supports Pvt. Ltd. — Send your inquiry or reach us on WhatsApp: 9072 114 116.">
+    <title>Contact — KAPTECH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* ── CONTACT MAIN ── */
+        #contact-main { padding: 90px 0; background: #f7f7f7; }
+
+        /* Info card */
+        .ci-card {
+            background: var(--black); color: var(--white);
+            border-radius: 6px; padding: 40px 36px; height: 100%;
+        }
+        .ci-card h5 { color: var(--white); font-weight: 800; margin-bottom: 24px; }
+        .ci-item {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 18px 0; border-bottom: 1px solid #1a1a1a;
+        }
+        .ci-item:last-of-type { border-bottom: none; }
+        .ci-icon {
+            width: 46px; height: 46px; flex-shrink: 0;
+            background: var(--red); border-radius: 4px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; color: var(--white);
+        }
+        .ci-icon.wa { background: #25D366; }
+        .ci-text h6 { font-size: .68rem; color: #666; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+        .ci-text p  { color: var(--white); font-weight: 600; font-size: .92rem; margin: 0; }
+        .ci-text a  { color: inherit; text-decoration: none; }
+        .ci-text a:hover { color: var(--red); }
+
+        .wa-cta-btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            background: #25D366; color: var(--white); text-decoration: none;
+            padding: 14px; border-radius: 4px; font-weight: 700; font-size: .9rem;
+            margin-top: 22px; transition: background .25s;
+        }
+        .wa-cta-btn:hover { background: #20ba58; color: var(--white); }
+
+        .map-box {
+            background: #111; border: 1px dashed #333; border-radius: 5px;
+            height: 180px; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; gap: 10px;
+            cursor: pointer; margin-top: 20px; transition: border-color .3s;
+        }
+        .map-box:hover { border-color: var(--red); }
+        .map-box i { font-size: 2rem; color: var(--red); }
+        .map-box span { font-size: .82rem; color: #666; }
+
+        /* Form card */
+        .cf-card {
+            background: var(--white); border-radius: 6px;
+            padding: 40px 36px; height: 100%;
+            box-shadow: 0 4px 28px rgba(0,0,0,.06);
+        }
+        .cf-card h5 { font-weight: 800; margin-bottom: 4px; }
+        .cf-card > p { color: #aaa; font-size: .83rem; margin-bottom: 28px; }
+
+        .form-label { font-size: .75rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; display: block; }
+        .form-control, .form-select {
+            border: 1px solid #e5e5e5; border-radius: 3px;
+            padding: 11px 15px; font-size: .88rem; background: #fafafa;
+            transition: border-color .25s, box-shadow .25s; width: 100%;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--red); box-shadow: 0 0 0 3px rgba(255,0,9,.08); outline: none;
+        }
+
+        /* ── FAQ ── */
+        #faq { padding: 90px 0; background: var(--white); }
+        .faq-item {
+            border: 1px solid #eee; border-radius: 5px; margin-bottom: 10px; overflow: hidden;
+        }
+        .faq-q {
+            padding: 18px 22px; font-weight: 700; font-size: .92rem;
+            cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+            transition: background .25s;
+        }
+        .faq-q:hover { background: #fafafa; }
+        .faq-q i { color: var(--red); transition: transform .3s; font-size: .85rem; }
+        .faq-q.open i { transform: rotate(180deg); }
+        .faq-a { display: none; padding: 0 22px 18px; font-size: .88rem; color: #777; line-height: 1.75; }
+        .faq-a.open { display: block; }
+
+        /* ── QUICK CONTACT STRIP ── */
+        #quick-strip { padding: 60px 0; background: var(--red); }
+        .qstrip-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+        .qstrip-text h3 { font-weight: 900; color: var(--white); font-size: clamp(1.3rem,2.5vw,1.8rem); margin-bottom: 4px; }
+        .qstrip-text p  { color: rgba(255,255,255,.75); font-size: .9rem; margin: 0; }
+        .qstrip-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+        .btn-white-sm {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--white); color: var(--red); text-decoration: none;
+            padding: 11px 24px; font-weight: 800; font-size: .82rem;
+            border-radius: 3px; transition: all .25s;
+        }
+        .btn-white-sm:hover { background: var(--black); color: var(--white); }
+        .btn-wa-sm {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: transparent; color: var(--white); text-decoration: none;
+            border: 2px solid rgba(255,255,255,.5);
+            padding: 9px 22px; font-weight: 700; font-size: .82rem;
+            border-radius: 3px; transition: all .25s;
+        }
+        .btn-wa-sm:hover { border-color: var(--white); background: rgba(255,255,255,.12); color: var(--white); }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+                <a href="index.html" class="nav-brand">
+                    <img src="main-logo.png" alt="KAPTECH Logo" class="nav-logo-img" style="height:42px;width:auto;display:block;">
+                </a>
+                <span style="display:inline-flex;align-items:center;gap:5px;background:#111;border:1px solid #2a2a2a;border-radius:3px;padding:4px 10px;">
+                    <span style="font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--steel);letter-spacing:2px;">BUILDTECH</span>
+                    <span style="font-size:.48rem;color:#444;letter-spacing:1px;text-transform:uppercase;line-height:1;">Authorised<br>Dealer</span>
+                </span>
+            </div>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html"    class="nav-link">Home</a>
+                <a href="about.html"    class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="why-us.html"   class="nav-link">Why Us</a>
+                <a href="gallery.html"  class="nav-link">Gallery</a>
+                <a href="contact.html"  class="nav-link active-page">Contact</a>
+                <a href="tel:9072114116" class="nav-link nav-cta ms-2"><i class="fas fa-phone-alt me-1"></i>9072 114 116</a>
+            </div>
+            <button class="nav-toggler d-lg-none" onclick="toggleNav()" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="mobileMenu">
+            <a href="index.html"    class="nav-link" onclick="toggleNav()">Home</a>
+            <a href="about.html"    class="nav-link" onclick="toggleNav()">About</a>
+            <a href="products.html" class="nav-link" onclick="toggleNav()">Products</a>
+            <a href="why-us.html"   class="nav-link" onclick="toggleNav()">Why Us</a>
+            <a href="gallery.html"  class="nav-link" onclick="toggleNav()">Gallery</a>
+            <a href="contact.html"  class="nav-link active-page" onclick="toggleNav()">Contact</a>
+            <a href="tel:9072114116" class="btn-primary-red d-inline-flex mt-2" style="font-size:.78rem;padding:10px 20px;">
+                <i class="fas fa-phone-alt"></i>9072 114 116
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="page-hero-tag"><i class="fas fa-envelope"></i>Reach Us</div>
+            <h1>Get in <span>Touch</span></h1>
+            <p>Have a project requirement or product query? Our team responds within 24 hours. For the fastest reply, reach us on WhatsApp.</p>
+            <div class="breadcrumb-bar">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span style="color:#aaa;">Contact</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT MAIN -->
+<section id="contact-main">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Info Card -->
+            <div class="col-lg-4 reveal">
+                <div class="ci-card">
+                    <h5>Contact Information</h5>
+
+                    <div class="ci-item">
+                        <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ci-text">
+                            <h6>Phone</h6>
+                            <p><a href="tel:9072114116">9072 114 116</a></p>
+                        </div>
+                    </div>
+
+                    <div class="ci-item">
+                        <div class="ci-icon wa"><i class="fab fa-whatsapp"></i></div>
+                        <div class="ci-text">
+                            <h6>WhatsApp</h6>
+                            <p><a href="https://wa.me/919072114116" target="_blank" rel="noopener" style="color:#25D366;">+91 9072 114 116</a></p>
+                        </div>
+                    </div>
+
+                    <div class="ci-item">
+                        <div class="ci-icon"><i class="fas fa-industry"></i></div>
+                        <div class="ci-text">
+                            <h6>Company</h6>
+                            <p style="font-size:.8rem;">KAPTECH TRAY AND PIPE SUPPORTS PRIVATE LIMITED</p>
+                        </div>
+                    </div>
+
+                    <div class="ci-item">
+                        <div class="ci-icon"><i class="fas fa-clock"></i></div>
+                        <div class="ci-text">
+                            <h6>Business Hours</h6>
+                            <p style="font-size:.85rem;">Mon – Sat: 9:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="ci-item">
+                        <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="ci-text">
+                            <h6>Response Time</h6>
+                            <p style="font-size:.85rem;">Inquiries replied within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="wa-cta-btn">
+                        <i class="fab fa-whatsapp fa-lg"></i>Chat on WhatsApp Now
+                    </a>
+
+                    <div class="map-box" onclick="window.open('https://maps.google.com','_blank')" title="View on Google Maps">
+                        <i class="fas fa-map-location-dot"></i>
+                        <span>View on Google Maps</span>
+                        <span style="font-size:.7rem;color:#444;">KAPTECH Manufacturing Unit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="col-lg-8 reveal">
+                <div class="cf-card">
+                    <h5>Send Your Inquiry</h5>
+                    <p>Fill in your details and we'll respond with a quote as soon as possible.</p>
+
+                    <form id="inquiryForm" onsubmit="handleSubmit(event)" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" for="inp-name">Full Name *</label>
+                                <input id="inp-name" type="text" class="form-control" placeholder="Your full name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="inp-phone">Phone / WhatsApp *</label>
+                                <input id="inp-phone" type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="inp-email">Email Address</label>
+                                <input id="inp-email" type="email" class="form-control" placeholder="your@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="inp-company">Company / Organisation</label>
+                                <input id="inp-company" type="text" class="form-control" placeholder="Your company name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="inp-category">Product Category *</label>
+                                <select id="inp-category" class="form-select" required>
+                                    <option value="">Select a category…</option>
+                                    <option>Kaptech Cable Tray</option>
+                                    <option>Kaptech Channels and Brackets</option>
+                                    <option>Kaptech Pipe Supporting Clamps</option>
+                                    <option>Kaptech Threaded Rod &amp; Tie Rod</option>
+                                    <option>Kaptech Fasteners</option>
+                                    <option>Kaptech Cable Tray Accessories</option>
+                                    <option>Kaptech Split AC Stand</option>
+                                    <option>Multiple Products</option>
+                                    <option>Custom / Special Requirement</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="inp-qty">Approximate Quantity</label>
+                                <input id="inp-qty" type="text" class="form-control" placeholder="e.g. 100 pcs / 500 kg">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="inp-msg">Message / Requirements *</label>
+                                <textarea id="inp-msg" class="form-control" rows="5"
+                                    placeholder="Describe your requirements — product specs, dimensions, delivery location, timeline, etc."
+                                    required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" id="submitBtn" class="btn-primary-red w-100 justify-content-center"
+                                    style="border-radius:4px;padding:14px;font-size:.9rem;">
+                                    <i class="fas fa-paper-plane"></i>Send Inquiry
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- QUICK STRIP -->
+<section id="quick-strip">
+    <div class="container">
+        <div class="qstrip-inner reveal">
+            <div class="qstrip-text">
+                <h3>Need a Faster Response?</h3>
+                <p>Call us directly or message on WhatsApp for an instant reply.</p>
+            </div>
+            <div class="qstrip-actions">
+                <a href="tel:9072114116" class="btn-white-sm"><i class="fas fa-phone-alt"></i>Call Now</a>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="btn-wa-sm">
+                    <i class="fab fa-whatsapp"></i>WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 reveal">
+                <div class="section-tag"><i class="fas fa-circle-question"></i>FAQs</div>
+                <h2 class="section-title">Frequently Asked<br><span>Questions</span></h2>
+                <div class="divider"></div>
+                <p class="section-lead">Quick answers to the most common queries from our customers.</p>
+            </div>
+            <div class="col-lg-7 reveal">
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        What materials are your cable trays available in?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-a">
+                        Our cable trays are available in Hot-Dip Galvanised (HDG), Electro-Galvanised (EG), Pre-Galvanised, Stainless Steel 304, Stainless Steel 316, and Powder Coated finishes to suit every environment.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Do you do custom sizes and non-standard specifications?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-a">
+                        Yes. We manufacture to custom widths, depths, lengths, and thickness as per your drawings or specifications. Share your requirements via WhatsApp or the inquiry form and we'll confirm feasibility and pricing.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        What is your typical lead time for orders?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-a">
+                        Standard products are usually dispatched within 3–7 working days depending on quantity. Custom or special orders typically require 7–15 working days. We will provide an exact timeline with your quote.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Do you deliver outside your local area?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-a">
+                        Yes. We deliver pan-India through our logistics partners. Freight charges are calculated based on order weight, volume, and destination. Contact us for freight estimates.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        What is the minimum order quantity?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-a">
+                        MOQ varies by product. Many standard items have no minimum. For custom or special products, an MOQ may apply. Contact us with your requirement and we will advise accordingly.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Are your products compliant with IS / ASTM standards?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-a">
+                        Yes. Our products comply with relevant IS, ASTM, and international engineering standards. Certificates and test reports can be provided on request for specific product categories.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <span class="foot-brand-kap">KAP</span><span class="foot-brand-tech">TECH</span>
+                <p class="foot-desc">Premium manufacturer of industrial cable tray systems, pipe supports, fasteners, and stainless steel accessories. Safety · Cleanliness · Strength.</p>
+                <div class="foot-social">
+                    <a href="#" class="fsoc" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="fsoc" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="fsoc" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="fsoc" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="fsoc" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="foot-head">Quick Links</h6>
+                <ul class="foot-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Products</a></li>
+                    <li><a href="why-us.html"><i class="fas fa-chevron-right"></i>Why Choose Us</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6 class="foot-head">Product Range</h6>
+                <ul class="foot-links">
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Cable Tray Systems</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Channels &amp; Brackets</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Pipe Support Clamps</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Threaded &amp; Tie Rods</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Fasteners &amp; Anchors</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Tray Accessories</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Split AC Stands</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h6 class="foot-head">Contact Us</h6>
+                <div class="foot-ci"><i class="fas fa-industry"></i><span>KAPTECH TRAY AND PIPE SUPPORTS PVT. LTD.</span></div>
+                <div class="foot-ci"><i class="fas fa-phone-alt"></i><a href="tel:9072114116" style="color:#555;text-decoration:none;">9072 114 116</a></div>
+                <div class="foot-ci"><i class="fab fa-whatsapp" style="color:#25D366;"></i><a href="https://wa.me/919072114116" target="_blank" rel="noopener" style="color:#25D366;text-decoration:none;">+91 9072 114 116</a></div>
+                <div class="foot-ci"><i class="fas fa-clock"></i><span>Mon – Sat: 9:00 AM – 6:00 PM</span></div>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="foot-wa-btn">
+                    <i class="fab fa-whatsapp fa-lg"></i>Get Quick Quote
+                </a>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p>&copy; 2024 <span>KAPTECH</span> Tray and Pipe Supports Pvt. Ltd. All rights reserved.</p>
+            <p>Designed for <span>industrial excellence</span></p>
+        </div>
+    </div>
+</footer>
+
+<div class="wa-float">
+    <span class="wa-tip">Chat with us!</span>
+    <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="wa-btn" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<a href="#" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="shared.js"></script>
+<script>
+/* ── Form ────────────────────────────────── */
+function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i>Inquiry Sent Successfully!';
+    btn.style.background = '#28a745';
+    btn.disabled = true;
+    setTimeout(() => {
+        btn.innerHTML = orig;
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+    }, 3500);
+}
+
+/* ── FAQ accordion ───────────────────────── */
+function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    const isOpen = el.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(q => { q.classList.remove('open'); q.nextElementSibling.classList.remove('open'); });
+    if (!isOpen) { el.classList.add('open'); answer.classList.add('open'); }
+}
+</script>
+</body>
+</html>

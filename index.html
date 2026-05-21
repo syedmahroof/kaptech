@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KAPTECH manufactures premium Cable Trays (GI, SS, Aluminium), Pipe Support Clamps, Threaded Rods & Anchor Fasteners. Pipe sizes 15–200 mm. PAN India delivery. Call 9072114116.">
+    <meta name="keywords" content="cable tray manufacturer india, perforated cable tray, ladder cable tray, raceway tray, pipe support clamps, GI cable tray, SS cable tray, threaded rod, anchor fasteners, U bolt, saddle clamp, clevis hanger, kaptech, wire mesh tray, junction box, slotted channel">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="KAPTECH Tray and Pipe Supports Pvt. Ltd.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KAPTECH — Cable Tray, Pipe Supports & Fasteners Manufacturer India">
+    <meta property="og:description" content="Complete smart solutions for modern plumbing and electrical work. Pipe Supports & Clamps · Cable Trays & Accessories · Fasteners & Clamps.">
+    <meta property="og:image" content="main-logo.png">
+    <title>KAPTECH — Cable Tray, Pipe Supports &amp; Fasteners Manufacturer | India</title>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KAPTECH Tray and Pipe Supports Pvt. Ltd.",
+        "description": "Manufacturer of Cable Trays, Pipe Support Clamps, Fasteners and Industrial Accessories",
+        "telephone": "+919072114116",
+        "logo": "main-logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+919072114116",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Hindi"]
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Industrial Cable Tray & Pipe Support Products",
+            "numberOfItems": "500+"
+        }
+    }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* ── NAVBAR LOGO ── */
+        .nav-logo-img {
+            height: 42px;
+            width: auto;
+            display: block;
+        }
+        .buildtech-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border-left: 1px solid rgba(255,255,255,.1);
+            padding-left: 16px;
+            margin-left: 6px;
+        }
+        .buildtech-badge .bt-by {
+            font-size: .5rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1;
+        }
+        .buildtech-badge .bt-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.15rem;
+            color: #777;
+            letter-spacing: 3px;
+            line-height: 1.1;
+        }
+        .buildtech-badge .bt-name span { color: var(--red); }
+
+        /* ── HERO ── */
+        #hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(135deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.72) 55%, rgba(18,0,0,.92) 100%),
+                url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80') center/cover no-repeat;
+            display: flex; align-items: center;
+            position: relative; overflow: hidden;
+            padding-top: 90px;
+        }
+        #hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(255,0,9,0.04)' stroke-width='0.8'/%3E%3C/svg%3E");
+        }
+        #hero::after {
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 100%; height: 130px;
+            background: linear-gradient(to top, #fff, transparent);
+            pointer-events: none;
+        }
+        .hero-inner { position: relative; z-index: 2; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(255,0,9,.12); border: 1px solid rgba(255,0,9,.4);
+            color: var(--red); font-size: .72rem; font-weight: 700;
+            letter-spacing: 2px; text-transform: uppercase;
+            padding: 7px 18px; border-radius: 2px; margin-bottom: 22px;
+            animation: fadeUp .8s ease both;
+        }
+        .hero-title {
+            font-size: clamp(2.4rem, 5vw, 4.4rem); font-weight: 900;
+            color: var(--white); line-height: 1.08; margin-bottom: 22px;
+            animation: fadeUp .8s .15s ease both;
+        }
+        .hero-title span { color: var(--red); }
+        .hero-sub {
+            font-size: clamp(.95rem, 1.7vw, 1.1rem); color: #aaa;
+            max-width: 640px; line-height: 1.75; margin-bottom: 16px;
+            animation: fadeUp .8s .3s ease both;
+        }
+        .hero-cats {
+            display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;
+            animation: fadeUp .8s .4s ease both;
+        }
+        .hero-cat-pill {
+            display: inline-flex; align-items: center; gap: 7px;
+            background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15);
+            color: #ccc; font-size: .75rem; font-weight: 600; letter-spacing: .5px;
+            padding: 6px 14px; border-radius: 30px;
+        }
+        .hero-cat-pill i { color: var(--red); font-size: .65rem; }
+        .hero-btns { animation: fadeUp .8s .5s ease both; }
+        .hero-stats {
+            display: flex; margin-top: 52px;
+            animation: fadeUp .8s .65s ease both;
+        }
+        .hstat {
+            text-align: center; padding: 0 28px;
+            border-right: 1px solid rgba(255,255,255,.1);
+        }
+        .hstat:first-child { padding-left: 0; }
+        .hstat:last-child  { border-right: none; }
+        .hstat-num { font-size: 2rem; font-weight: 900; color: var(--red); line-height: 1; }
+        .hstat-lbl { font-size: .64rem; color: #666; text-transform: uppercase; letter-spacing: 1.2px; margin-top: 5px; }
+
+        /* ── TICKER BAND ── */
+        #ticker {
+            background: var(--red);
+            padding: 13px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-inner {
+            display: inline-flex; gap: 0;
+            animation: tickerScroll 30s linear infinite;
+        }
+        .ticker-item {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-size: .78rem; font-weight: 700; color: rgba(255,255,255,.9);
+            letter-spacing: 1px; text-transform: uppercase;
+            padding: 0 36px;
+        }
+        .ticker-item i { color: rgba(255,255,255,.6); font-size: .6rem; }
+        @keyframes tickerScroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ── CATEGORIES STRIP ── */
+        #categories { padding: 80px 0; background: var(--white); }
+        .cat-card {
+            background: var(--bg-light); border: 1px solid #eee;
+            border-radius: 6px; padding: 28px 20px; text-align: center;
+            height: 100%; cursor: pointer; transition: all .3s;
+            text-decoration: none; color: inherit; display: block;
+        }
+        .cat-card:hover {
+            transform: translateY(-6px); background: var(--black);
+            box-shadow: 0 16px 40px rgba(0,0,0,.12); border-color: var(--red);
+        }
+        .cat-icon {
+            width: 60px; height: 60px; background: rgba(255,0,9,.08);
+            border: 1px solid rgba(255,0,9,.2); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; color: var(--red); margin: 0 auto 16px;
+            transition: all .3s;
+        }
+        .cat-card:hover .cat-icon { background: var(--red); color: var(--white); border-color: var(--red); }
+        .cat-card h6 { font-size: .85rem; font-weight: 700; margin: 0; transition: color .3s; }
+        .cat-card:hover h6 { color: var(--white); }
+        .cat-card p  { font-size: .76rem; color: #999; margin: 6px 0 0; transition: color .3s; }
+        .cat-card:hover p { color: #777; }
+
+        /* ── PRODUCT CATEGORY SECTIONS ── */
+        .prod-cat-section { padding: 90px 0; }
+        .prod-cat-section.alt { background: var(--bg-light); }
+        .prod-cat-section.dark {
+            background: linear-gradient(135deg, #0a0a0a 0%, #111 100%);
+        }
+
+        .cat-section-header {
+            display: flex; align-items: center; gap: 20px; margin-bottom: 36px;
+        }
+        .cat-letter {
+            width: 64px; height: 64px; background: var(--red); color: var(--white);
+            font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem;
+            border-radius: 4px; display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; box-shadow: 0 6px 20px rgba(255,0,9,.3);
+        }
+
+        /* Spec Infographic Band */
+        .spec-band {
+            background: linear-gradient(135deg, #111 0%, #1a0000 100%);
+            border: 1px solid rgba(255,0,9,.2);
+            border-left: 4px solid var(--red);
+            border-radius: 6px; padding: 22px 28px;
+            margin-bottom: 40px;
+            display: flex; flex-wrap: wrap; gap: 20px; align-items: center;
+        }
+        .spec-band.light {
+            background: var(--white);
+            border-color: rgba(255,0,9,.15);
+            border-left-color: var(--red);
+            box-shadow: 0 4px 20px rgba(0,0,0,.06);
+        }
+        .spec-group { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 140px; }
+        .spec-label {
+            font-size: .6rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 2px; color: var(--red);
+        }
+        .spec-value {
+            font-size: .82rem; font-weight: 700; color: var(--white); line-height: 1.4;
+        }
+        .spec-band.light .spec-value { color: #222; }
+        .spec-mats { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
+        .spec-mat {
+            background: rgba(255,0,9,.1); border: 1px solid rgba(255,0,9,.25);
+            color: #ff4d50; font-size: .62rem; font-weight: 700;
+            padding: 3px 10px; border-radius: 20px; letter-spacing: .5px;
+        }
+        .spec-band.light .spec-mat {
+            background: rgba(255,0,9,.07); color: var(--red);
+        }
+        .spec-divider {
+            width: 1px; height: 44px; background: rgba(255,255,255,.08);
+            flex-shrink: 0;
+        }
+        .spec-band.light .spec-divider { background: #eee; }
+
+        /* Product Image Cards */
+        .prod-img-card {
+            background: var(--white); border: 1px solid #eee;
+            border-radius: 8px; overflow: hidden;
+            transition: all .3s; height: 100%;
+            display: flex; flex-direction: column;
+        }
+        .prod-cat-section.dark .prod-img-card {
+            background: #1a1a1a; border-color: #2a2a2a;
+        }
+        .prod-img-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,0,0,.14);
+            border-color: rgba(255,0,9,.35);
+        }
+        .prod-img-wrap {
+            position: relative; overflow: hidden;
+            height: 180px; background: #f5f5f5;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .prod-cat-section.dark .prod-img-wrap { background: #111; }
+        .prod-img-wrap img {
+            width: 100%; height: 100%;
+            object-fit: contain; padding: 14px;
+            transition: transform .4s;
+        }
+        .prod-img-card:hover .prod-img-wrap img { transform: scale(1.07); }
+        .prod-img-body {
+            padding: 14px 16px 16px; flex: 1;
+            display: flex; flex-direction: column; gap: 4px;
+        }
+        .prod-img-body h6 {
+            font-size: .8rem; font-weight: 700; color: #1a1a1a;
+            margin: 0; line-height: 1.35;
+        }
+        .prod-cat-section.dark .prod-img-body h6 { color: #ddd; }
+        .prod-img-body p {
+            font-size: .71rem; color: #aaa; margin: 0; line-height: 1.45;
+        }
+        .prod-num-badge {
+            position: absolute; top: 10px; left: 10px;
+            background: var(--red); color: var(--white);
+            font-size: .58rem; font-weight: 700; letter-spacing: 1px;
+            padding: 3px 8px; border-radius: 2px;
+        }
+
+        /* ── CTA BAND ── */
+        #cta-band { padding: 80px 0; background: var(--red); }
+        .cta-band-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+        .cta-band-inner h2 { font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 900; color: var(--white); margin-bottom: 14px; }
+        .cta-band-inner p  { color: rgba(255,255,255,.8); font-size: .97rem; line-height: 1.75; margin-bottom: 30px; }
+        .btn-white {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: var(--white); color: var(--red);
+            padding: 13px 32px; font-weight: 800; font-size: .88rem;
+            letter-spacing: .5px; text-transform: uppercase; border-radius: 3px;
+            text-decoration: none; transition: all .25s;
+        }
+        .btn-white:hover { background: var(--black); color: var(--white); transform: translateY(-2px); }
+        .btn-wa-white {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: transparent; color: var(--white);
+            border: 2px solid rgba(255,255,255,.5);
+            padding: 11px 30px; font-weight: 700; font-size: .88rem;
+            letter-spacing: .5px; text-transform: uppercase; border-radius: 3px;
+            text-decoration: none; transition: all .25s;
+        }
+        .btn-wa-white:hover { border-color: var(--white); background: rgba(255,255,255,.1); color: var(--white); }
+
+        /* ── STRENGTHS ── */
+        #strengths {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0a0a0a 0%, #111 60%, #0d0000 100%);
+        }
+        .str-card {
+            background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+            border-top: 3px solid var(--red); border-radius: 4px;
+            padding: 34px 26px; height: 100%; transition: all .3s;
+        }
+        .str-card:hover {
+            background: rgba(255,0,9,.07); border-color: rgba(255,0,9,.3);
+            transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,.4);
+        }
+        .str-icon {
+            width: 56px; height: 56px; background: rgba(255,0,9,.12);
+            border-radius: 4px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; color: var(--red); margin-bottom: 20px; transition: all .3s;
+        }
+        .str-card:hover .str-icon { background: var(--red); color: var(--white); }
+        .str-card h5 { font-size: .95rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+        .str-card p  { font-size: .82rem; color: #666; line-height: 1.7; margin: 0; }
+
+        /* ── INDUSTRIES ── */
+        #industries { padding: 100px 0; background: var(--bg-light); }
+        .ind-card {
+            position: relative; overflow: hidden; border-radius: 6px;
+            height: 180px; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; text-align: center;
+            padding: 20px; cursor: default; transition: all .35s;
+            border: 1px solid #e0e0e0;
+        }
+        .ind-card::before {
+            content: ''; position: absolute; inset: 0;
+            background: var(--black); opacity: 0; transition: opacity .35s;
+        }
+        .ind-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,.12); border-color: var(--red); }
+        .ind-card:hover::before { opacity: .92; }
+        .ind-icon {
+            width: 62px; height: 62px; background: rgba(255,0,9,.08);
+            border: 1px solid rgba(255,0,9,.2); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; color: var(--red); margin-bottom: 14px;
+            position: relative; z-index: 1; transition: all .35s;
+        }
+        .ind-card:hover .ind-icon { background: var(--red); color: var(--white); border-color: var(--red); }
+        .ind-card h6 { font-size: .83rem; font-weight: 700; color: #222; margin: 0; position: relative; z-index: 1; transition: color .35s; }
+        .ind-card p { font-size: .72rem; color: #999; margin: 5px 0 0; position: relative; z-index: 1; transition: color .35s; }
+        .ind-card:hover h6 { color: var(--white); }
+        .ind-card:hover p  { color: #aaa; }
+
+        /* ── ABOUT HOME ── */
+        #about-home { padding: 100px 0; background: var(--white); }
+        .ahome-img { width: 100%; height: 420px; object-fit: cover; border-radius: 4px; display: block; box-shadow: 10px 10px 0 var(--red); }
+        .ahome-badge {
+            position: absolute; top: 24px; left: -18px;
+            background: var(--red); color: var(--white);
+            padding: 14px 20px; border-radius: 3px;
+            text-align: center; box-shadow: 0 6px 20px rgba(255,0,9,.35);
+        }
+        .ahome-badge-num { font-size: 1.7rem; font-weight: 900; line-height: 1; }
+        .ahome-badge-txt { font-size: .58rem; letter-spacing: 1.5px; text-transform: uppercase; opacity: .85; margin-top: 3px; }
+        .ahome-list { list-style: none; padding: 0; margin: 0 0 8px; }
+        .ahome-list li {
+            display: flex; align-items: center; gap: 11px;
+            font-size: .88rem; font-weight: 500; color: #333;
+            padding: 7px 0; border-bottom: 1px solid #f0f0f0;
+        }
+        .ahome-list li:last-child { border-bottom: none; }
+        .ahome-list li i { color: var(--red); font-size: .8rem; flex-shrink: 0; }
+
+        @media (max-width: 768px) {
+            .hstat { padding: 0 12px; }
+            .spec-band { padding: 18px 16px; }
+            .buildtech-badge { display: none; }
+            .cat-section-header { gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="nav-brand" aria-label="KAPTECH Home">
+                <img src="main-logo.png" alt="KAPTECH Tray and Pipe Supports Pvt. Ltd. Logo" class="nav-logo-img">
+            </a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="about.html"    class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="why-us.html"   class="nav-link">Why Us</a>
+                <a href="gallery.html"  class="nav-link">Gallery</a>
+                <a href="contact.html"  class="nav-link">Contact</a>
+                <a href="tel:9072114116" class="nav-link nav-cta ms-2">
+                    <i class="fas fa-phone-alt me-1" aria-hidden="true"></i>9072 114 116
+                </a>
+                <div class="buildtech-badge" aria-label="Authorized Partner: Buildtech">
+                    <span class="bt-by">Authorized by</span>
+                    <span class="bt-name">BUILD<span>TECH</span></span>
+                </div>
+            </div>
+            <button class="nav-toggler d-lg-none" onclick="toggleNav()" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+            <a href="about.html"    class="nav-link" onclick="toggleNav()">About</a>
+            <a href="products.html" class="nav-link" onclick="toggleNav()">Products</a>
+            <a href="why-us.html"   class="nav-link" onclick="toggleNav()">Why Us</a>
+            <a href="gallery.html"  class="nav-link" onclick="toggleNav()">Gallery</a>
+            <a href="contact.html"  class="nav-link" onclick="toggleNav()">Contact</a>
+            <a href="tel:9072114116" class="btn-primary-red d-inline-flex mt-2" style="font-size:.78rem;padding:10px 20px;">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>9072 114 116
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero — KAPTECH Industrial Solutions">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-badge"><i class="fas fa-industry" aria-hidden="true"></i>Trusted Industrial Manufacturer &amp; Supplier</div>
+            <h1 class="hero-title">
+                Complete Smart Solutions<br>for Your <span>Modern Plumbing</span><br>&amp; <span>Electrical Work</span>
+            </h1>
+            <p class="hero-sub">
+                Premium manufacturer of industrial cable management systems and pipe support structures — built on safety, cleanliness &amp; strength.
+            </p>
+            <div class="hero-cats">
+                <span class="hero-cat-pill"><i class="fas fa-circle-dot" aria-hidden="true"></i>Pipe Supports &amp; Clamps</span>
+                <span class="hero-cat-pill"><i class="fas fa-circle-dot" aria-hidden="true"></i>Cable Trays &amp; Accessories</span>
+                <span class="hero-cat-pill"><i class="fas fa-circle-dot" aria-hidden="true"></i>Fasteners &amp; Clamps</span>
+            </div>
+            <div class="hero-btns d-flex flex-wrap gap-3">
+                <a href="products.html" class="btn-primary-red"><i class="fas fa-th-large" aria-hidden="true"></i>View Products</a>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>WhatsApp Us
+                </a>
+            </div>
+            <div class="hero-stats" role="list" aria-label="Key statistics">
+                <div class="hstat" role="listitem"><div class="hstat-num">500+</div><div class="hstat-lbl">Products</div></div>
+                <div class="hstat" role="listitem"><div class="hstat-num">3</div><div class="hstat-lbl">Categories</div></div>
+                <div class="hstat" role="listitem"><div class="hstat-num">100%</div><div class="hstat-lbl">Quality</div></div>
+                <div class="hstat" role="listitem"><div class="hstat-num">PAN</div><div class="hstat-lbl">India Delivery</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TICKER -->
+<div id="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>GI Cable Trays</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>SS Wire Mesh Tray</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Ladder Type Tray</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Perforated Cable Tray</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Pipe Support Clamps</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>U Bolt &amp; Saddle Clamps</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Anchor Fasteners</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Threaded Rods</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Strut Channels</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Junction Box</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Clevis Hanger</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Z Bracket</span>
+        <!-- duplicate for seamless loop -->
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>GI Cable Trays</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>SS Wire Mesh Tray</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Ladder Type Tray</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Perforated Cable Tray</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Pipe Support Clamps</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>U Bolt &amp; Saddle Clamps</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Anchor Fasteners</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Threaded Rods</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Strut Channels</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Junction Box</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Clevis Hanger</span>
+        <span class="ticker-item"><i class="fas fa-check-circle"></i>Z Bracket</span>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION A — PIPE SUPPORTS & CLAMPS
+     ═══════════════════════════════════════════════ -->
+<section id="pipe-supports" class="prod-cat-section" aria-labelledby="pipe-supports-heading">
+    <div class="container">
+
+        <div class="cat-section-header reveal">
+            <div class="cat-letter" aria-hidden="true">A</div>
+            <div>
+                <div class="section-tag"><i class="fas fa-ring" aria-hidden="true"></i>Category A</div>
+                <h2 class="section-title" id="pipe-supports-heading">Pipe Supports &amp; <span>Clamps</span></h2>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- Spec Infographic -->
+        <div class="spec-band reveal" role="region" aria-label="Pipe Supports specifications">
+            <div class="spec-group">
+                <span class="spec-label">Make</span>
+                <span class="spec-value">KAPTECH</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Material</span>
+                <div class="spec-mats">
+                    <span class="spec-mat">GI</span>
+                    <span class="spec-mat">SS</span>
+                    <span class="spec-mat">MS</span>
+                    <span class="spec-mat">Powder Coated</span>
+                </div>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Pipe Size</span>
+                <span class="spec-value">15 mm – 200 mm</span>
+                <span class="spec-value" style="font-size:.72rem;color:#888;font-weight:500;">PVC · CPVC · ASTM · GI · MS</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Thickness</span>
+                <span class="spec-value">0.8 mm – 2.5 mm</span>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A1</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A1-SLOTTED%20CHANNEL.webp"
+                             alt="Kaptech Slotted Channel for plumbing and electrical — GI, SS, MS available"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Slotted Channel</h6>
+                        <p>Electrical &amp; Plumbing Slotted · GI / SS / MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A2</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A2-THREADED%20ROD.JPG"
+                             alt="Kaptech Threaded Rod for pipe support systems — GI, SS, MS"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Threaded Rod</h6>
+                        <p>GI · SS · MS · Custom lengths</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A3</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A3-SPLIT%20CLAMP%20WITH%20RUBBER%20BEEDING.jpg"
+                             alt="Kaptech Split Clamp with Rubber Beading for vibration-free pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Split Clamp with Rubber Beading</h6>
+                        <p>Anti-vibration · GI / SS / MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A4</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A4-U%20BOLT.jpeg"
+                             alt="Kaptech U Bolt pipe clamp — GI and SS, 15mm to 200mm pipe size"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>U Bolt</h6>
+                        <p>15–200 mm · GI · SS · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A5</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A5-SADDLE%20CLAMP.jpeg"
+                             alt="Kaptech Saddle Clamp for GI and PVC pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Saddle Clamp</h6>
+                        <p>GI · SS · Powder Coated</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A6</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A6-%20UNIVERSAL%20CLAMP.jpg"
+                             alt="Kaptech Universal Clamp for multi-pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Universal Clamp</h6>
+                        <p>Multi-size · GI · SS · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A7</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A7-CLEVIS%20HANGER%20WITH%20RUBBER.jpg"
+                             alt="Kaptech Clevis Hanger with Rubber for suspended pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Clevis Hanger</h6>
+                        <p>With rubber insert · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A8</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A8-U%20BOLT%20WITH%20RUBBER.jpg"
+                             alt="Kaptech U Bolt with Rubber lining for noise and vibration dampening"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>U Bolt with Rubber</h6>
+                        <p>Noise &amp; vibration damping</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A9</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A9-UNIVERSAL%20CLAMP%20WITH%20RUBBER.jpg"
+                             alt="Kaptech Universal Clamp with Rubber insert for vibration-free installation"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Universal Clamp with Rubber</h6>
+                        <p>Anti-vibration · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A10</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A10-SADDLE%20CLAMP%20WITH%20RUBBER.jpg"
+                             alt="Kaptech Saddle Clamp with Rubber for CPVC and PVC pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Saddle Clamp with Rubber</h6>
+                        <p>CPVC · PVC compatible</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A11</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A11-ANCHOR%20FASTNER%202.jpg"
+                             alt="Kaptech Anchor Fastener for wall and ceiling pipe support mounting"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Anchor Fastener</h6>
+                        <p>Wall &amp; ceiling mounting · GI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A12</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A12-WALL%20BRACKET.jpg"
+                             alt="Kaptech Wall Bracket and Vertical Support for pipe systems"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Wall Bracket / Vertical Support</h6>
+                        <p>Heavy duty · GI · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A13</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A13-SIDE%20WALL%20BRACKET.png"
+                             alt="Kaptech Side Wall Bracket for lateral pipe support and cable tray mounting"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Side Wall Bracket</h6>
+                        <p>Lateral mounting · GI · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A14</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A14.NUT%20WASHER.jpg"
+                             alt="Kaptech Nuts and Washers for pipe support assembly"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Nut &amp; Washer</h6>
+                        <p>GI · SS · Full range sizes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">A15</span>
+                        <img src="images/A.PIPE%20SUPPORTS%20%26%20CLAMPS/A15-Rubber%20supports%20insert.jpg"
+                             alt="Kaptech Rubber Support Insert for pipe vibration isolation"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Rubber Support Insert</h6>
+                        <p>Vibration isolation · All sizes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 reveal">
+            <a href="products.html" class="btn-primary-red"><i class="fas fa-arrow-right" aria-hidden="true"></i>View All Pipe Support Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION B — CABLE TRAYS & ACCESSORIES
+     ═══════════════════════════════════════════════ -->
+<section id="cable-trays" class="prod-cat-section alt" aria-labelledby="cable-trays-heading">
+    <div class="container">
+
+        <div class="cat-section-header reveal">
+            <div class="cat-letter" aria-hidden="true">B</div>
+            <div>
+                <div class="section-tag"><i class="fas fa-grip-lines" aria-hidden="true"></i>Category B</div>
+                <h2 class="section-title" id="cable-trays-heading">Cable Trays &amp; <span>Accessories</span></h2>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- Spec Infographic -->
+        <div class="spec-band light reveal" role="region" aria-label="Cable Tray specifications">
+            <div class="spec-group">
+                <span class="spec-label">Make</span>
+                <span class="spec-value">KAPTECH</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Sheet</span>
+                <span class="spec-value">JSW Steel</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Width × Height</span>
+                <span class="spec-value">50–1000 mm × 25–100 mm</span>
+                <span class="spec-value" style="font-size:.72rem;color:#999;font-weight:500;">Length: 2500 mm · Custom sizes available</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Material</span>
+                <div class="spec-mats">
+                    <span class="spec-mat">Pre-GI</span>
+                    <span class="spec-mat">SS</span>
+                    <span class="spec-mat">MS</span>
+                    <span class="spec-mat">Aluminium</span>
+                    <span class="spec-mat">Hot Dip GI</span>
+                    <span class="spec-mat">Electro Plated</span>
+                    <span class="spec-mat">Powder Coated</span>
+                </div>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-group">
+                <span class="spec-label">Thickness</span>
+                <span class="spec-value">1 mm – 2 mm</span>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B1</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B1-PERFORATED%20CABLE%20TRAY.jpeg"
+                             alt="Kaptech Perforated Cable Tray GI, SS, Aluminium — 50mm to 1000mm width"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Perforated Cable Tray</h6>
+                        <p>GI · SS · Al · Pre-Galvanised</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B2</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B2-RACEWAYS.png"
+                             alt="Kaptech Raceway Cable Tray for enclosed cable management"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Raceway Tray</h6>
+                        <p>Enclosed · GI · Powder Coated</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B3</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B3-LADDER.png"
+                             alt="Kaptech Ladder Type Cable Tray for heavy cable loads — GI and SS"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Ladder Type Cable Tray</h6>
+                        <p>Heavy duty · GI · SS · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B4</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B4-SS%20WIRE%20MESH.png"
+                             alt="Kaptech SS Wire Mesh Cable Tray for corrosion-resistant cable management"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>SS Wire Mesh Tray</h6>
+                        <p>Stainless Steel · Corrosion resistant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B5</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B5-CABLE%20TRAY%20BEND.png"
+                             alt="Kaptech Cable Tray Bend — horizontal and vertical bends for routing"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Cable Tray Bend</h6>
+                        <p>Horizontal &amp; vertical bends · All sizes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B6</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B6-JUNCTION%20BOX.png"
+                             alt="Kaptech Junction Box for cable tray systems — GI and SS"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Junction Box</h6>
+                        <p>GI · SS · Custom fabrication</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">B7</span>
+                        <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B7-HANGING%20SUPPORT.png"
+                             alt="Kaptech Cable Tray Hangers and Hanging Support systems — various types"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Cable Tray Hangers</h6>
+                        <p>Multiple types · GI · SS · MS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 reveal">
+            <a href="products.html" class="btn-primary-red"><i class="fas fa-arrow-right" aria-hidden="true"></i>View All Cable Tray Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION D — FASTENERS & ACCESSORIES
+     ═══════════════════════════════════════════════ -->
+<section id="fasteners" class="prod-cat-section dark" aria-labelledby="fasteners-heading">
+    <div class="container">
+
+        <div class="cat-section-header reveal">
+            <div class="cat-letter" aria-hidden="true">C</div>
+            <div>
+                <div class="section-tag" style="color:rgba(255,0,9,.85);"><i class="fas fa-bolt" aria-hidden="true"></i>Category C</div>
+                <h2 class="section-title" id="fasteners-heading" style="color:var(--white);">Fasteners &amp; <span>Clamps</span></h2>
+                <div class="divider"></div>
+                <p class="section-lead" style="color:#666;">Wide range of D Hook, L Type Clamps, GI Grouting Legs, Anchor Fasteners, Gas Pipe Clamps, Beam Support Clamps, Tie Rods, Wing Nuts, Strut Channels &amp; Z Brackets.</p>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-3 mt-2">
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D1</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D1-CORE%20BIT.png"
+                             alt="Kaptech Core Bit for concrete drilling and anchor installation"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Core Bit</h6>
+                        <p>Concrete drilling · Multiple sizes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D2</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D2-DROP%20IN%20ANCHOR.png"
+                             alt="Kaptech Drop In Anchor for suspended ceiling and pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Drop In Anchor</h6>
+                        <p>Suspended ceiling · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D3</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D3-WEDGE%20ANCHOR.jpg"
+                             alt="Kaptech Wedge Anchor for heavy load wall and floor fastening"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Wedge Anchor</h6>
+                        <p>Heavy load fastening · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D4</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D4-ANCHOR%20BOLT.jpg"
+                             alt="Kaptech Anchor Bolt for industrial pipe support and cable tray mounting"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Anchor Bolt</h6>
+                        <p>Structural fastening · M6–M20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D5</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D5-BOLT.jpg"
+                             alt="Kaptech Bolts for industrial fastening applications"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Bolt</h6>
+                        <p>GI · SS · Full metric range</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D6</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D6-SS%20TAM%20ANCHOR.png"
+                             alt="Kaptech SS Tam Anchor for corrosion-resistant fastening"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>SS Tam Anchor</h6>
+                        <p>Stainless steel · Corrosion proof</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D7</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D7-CREWS.png"
+                             alt="Kaptech Screws for industrial and electrical installation"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Screws</h6>
+                        <p>GI · SS · Self-tapping &amp; machine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D8</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D8-LONG%20NUT.jpg"
+                             alt="Kaptech Long Nut for threaded rod extension in pipe support systems"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Long Nut</h6>
+                        <p>Coupling nut · GI · SS · Full range</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D9</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D9-SPRING%20NUT.jpg"
+                             alt="Kaptech Spring Nut for strut channel and cable tray assembly"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Spring Nut</h6>
+                        <p>Strut channel nut · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D10</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D10-EYE%20DOOK.jpg"
+                             alt="Kaptech Eye Hook for hanging and suspension applications"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Eye Hook</h6>
+                        <p>Suspension &amp; hanging · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D11</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D11-D%20HOOK.jpg"
+                             alt="Kaptech D Hook for pipe and cable tray hanging support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>D Hook</h6>
+                        <p>Pipe &amp; tray hanging · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D12</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D12-L%20TYPE%20LEG.png"
+                             alt="Kaptech L Type Clamp Leg for pipe and bracket mounting"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>L Type Clamp</h6>
+                        <p>Bracket mounting · GI · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D13</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D13-GROUTING%20LEG.png"
+                             alt="Kaptech GI Grouting Leg for embedded pipe support foundations"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>GI Grouting Leg</h6>
+                        <p>Embedded support · Pre-galvanised</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D14</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D14-FASTNER%20LEG.png"
+                             alt="Kaptech Anchor Fastener Leg for industrial pipe mounting"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Anchor Fastener Leg</h6>
+                        <p>Industrial mounting · GI · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D15</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D15-GAS%20PIPE%20CLAMP.jpg"
+                             alt="Kaptech Gas Pipe Clamp for LPG and gas pipeline support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Gas Pipe Clamp</h6>
+                        <p>LPG · CNG · Gas pipeline support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D16</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D16-BEAM%20SUPPORT.jpg"
+                             alt="Kaptech Beam Support Clamp for cable tray and pipe hanging from steel beams"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Beam Support Clamp</h6>
+                        <p>Steel beam mounting · GI · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D17</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D17-TIE%20ROD%2CWING%20NUT%26ANCHOR%20NUT.png"
+                             alt="Kaptech Tie Rod, Wing Nut and Anchor Nut assembly for pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Tie Rod, Wing Nut &amp; Anchor Nut</h6>
+                        <p>Complete assembly set · GI · SS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D18</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D18-STRUCT%20CHANNEL.jpg"
+                             alt="Kaptech Strut Channel for cable tray and pipe support framing"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Strut Channel</h6>
+                        <p>Framing support · GI · Hot-dip GI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D19</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D19-Z%20BRACKET.png"
+                             alt="Kaptech Z Bracket for wall-mounted cable tray and pipe support"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Z Bracket</h6>
+                        <p>Wall mount cable tray · GI · MS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+                <div class="prod-img-card">
+                    <div class="prod-img-wrap">
+                        <span class="prod-num-badge">D20</span>
+                        <img src="images/D-FASTENERS%20%26%20OTHER%20ACCESSORIES/D20-HOSE%20CLIP.jpg"
+                             alt="Kaptech Hose Clip stainless steel and GI for hose and pipe clamping"
+                             loading="lazy">
+                    </div>
+                    <div class="prod-img-body">
+                        <h6>Hose Clip</h6>
+                        <p>SS · GI · All diameter sizes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 reveal">
+            <a href="products.html" class="btn-primary-red"><i class="fas fa-arrow-right" aria-hidden="true"></i>View All Fastener Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE KAPTECH -->
+<section id="strengths" aria-labelledby="strengths-heading">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <div class="section-tag justify-content-center" style="color:rgba(255,0,9,.85);"><i class="fas fa-star" aria-hidden="true"></i>Why KAPTECH</div>
+            <h2 class="section-title" id="strengths-heading" style="color:var(--white);">The <span>KAPTECH</span> Advantage</h2>
+            <div class="divider center"></div>
+            <p class="section-lead mx-auto" style="color:#666;">Thousands of industrial clients trust KAPTECH for quality, reliability, and service.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3 reveal">
+                <div class="str-card">
+                    <div class="str-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+                    <h5>IS Standard Quality</h5>
+                    <p>All products comply with Bureau of Indian Standards (BIS) for structural integrity and safety.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 reveal">
+                <div class="str-card">
+                    <div class="str-icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                    <h5>Custom Fabrication</h5>
+                    <p>We manufacture to your exact specifications — custom lengths, finishes, hole patterns, and load capacities.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 reveal">
+                <div class="str-card">
+                    <div class="str-icon"><i class="fas fa-truck" aria-hidden="true"></i></div>
+                    <h5>PAN India Delivery</h5>
+                    <p>Efficient dispatch and logistics network covers all major states and cities across India.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 reveal">
+                <div class="str-card">
+                    <div class="str-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+                    <h5>500+ SKU Range</h5>
+                    <p>One-stop source for all cable management and pipe support requirements — trays, clamps, rods, fasteners and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INDUSTRIES WE SERVE -->
+<section id="industries" aria-labelledby="industries-heading">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <div class="section-tag justify-content-center"><i class="fas fa-building" aria-hidden="true"></i>Industries</div>
+            <h2 class="section-title" id="industries-heading">Industries We <span>Serve</span></h2>
+            <div class="divider center"></div>
+            <p class="section-lead mx-auto">Our products are deployed across mission-critical facilities and infrastructure projects throughout India.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2 reveal">
+                <div class="ind-card">
+                    <div class="ind-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+                    <h6>Power Plants</h6>
+                    <p>Thermal &amp; Hydro</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal">
+                <div class="ind-card">
+                    <div class="ind-icon"><i class="fas fa-flask" aria-hidden="true"></i></div>
+                    <h6>Refineries</h6>
+                    <p>Oil &amp; Gas</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal">
+                <div class="ind-card">
+                    <div class="ind-icon"><i class="fas fa-hard-hat" aria-hidden="true"></i></div>
+                    <h6>Construction</h6>
+                    <p>Commercial &amp; Industrial</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal">
+                <div class="ind-card">
+                    <div class="ind-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                    <h6>Data Centers</h6>
+                    <p>IT Infrastructure</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal">
+                <div class="ind-card">
+                    <div class="ind-icon"><i class="fas fa-wind" aria-hidden="true"></i></div>
+                    <h6>HVAC Systems</h6>
+                    <p>MEP Projects</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 reveal">
+                <div class="ind-card">
+                    <div class="ind-icon"><i class="fas fa-hospital" aria-hidden="true"></i></div>
+                    <h6>Hospitals</h6>
+                    <p>Healthcare Infra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT KAPTECH -->
+<section id="about-home" aria-labelledby="about-home-heading">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 reveal">
+                <div style="position:relative;display:inline-block;width:100%;">
+                    <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B1-PERFORATED%20CABLE%20TRAY.jpeg"
+                         alt="KAPTECH Perforated Cable Tray — manufactured in GI, SS and Aluminium"
+                         class="ahome-img">
+                    <div class="ahome-badge">
+                        <div class="ahome-badge-num">500+</div>
+                        <div class="ahome-badge-txt">Products in Stock</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 reveal" style="padding-left:clamp(0px,4vw,48px);">
+                <div class="section-tag"><i class="fas fa-industry" aria-hidden="true"></i>About KAPTECH</div>
+                <h2 class="section-title" id="about-home-heading">Built on <span>Precision</span>,<br>Driven by <span>Quality</span></h2>
+                <div class="divider"></div>
+                <p class="section-lead mb-4">KAPTECH Tray and Pipe Supports Pvt. Ltd. is a trusted manufacturer of premium industrial cable tray systems, pipe support structures, and fastener solutions. We combine modern manufacturing with stringent quality checks to deliver products that meet IS standards and exceed client expectations.</p>
+                <ul class="ahome-list" aria-label="KAPTECH key differentiators">
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i>IS / ISI Standard compliant products</li>
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i>In-house fabrication with multi-stage QC</li>
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i>Custom specifications &amp; sizes accepted</li>
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i>GI, Stainless Steel &amp; Mild Steel options</li>
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i>PAN India dispatch &amp; logistics support</li>
+                </ul>
+                <div class="d-flex gap-3 mt-4 flex-wrap">
+                    <a href="about.html" class="btn-primary-red"><i class="fas fa-arrow-right" aria-hidden="true"></i>About Us</a>
+                    <a href="contact.html" class="btn-dark"><i class="fas fa-phone-alt" aria-hidden="true"></i>Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BAND -->
+<section id="cta-band" aria-label="Call to action — get a quote">
+    <div class="container">
+        <div class="cta-band-inner reveal">
+            <h2>Ready to Place an Order or Get a Quote?</h2>
+            <p>Our team is available Mon–Sat, 9 AM to 6 PM. Reach us instantly on WhatsApp for the fastest response.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="contact.html" class="btn-white"><i class="fas fa-envelope" aria-hidden="true"></i>Send Inquiry</a>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" class="btn-wa-white">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <img src="main-logo.png" alt="KAPTECH Tray and Pipe Supports Pvt. Ltd." style="height:48px;width:auto;margin-bottom:14px;display:block;">
+                <p class="foot-desc">Premium manufacturer of industrial cable tray systems, pipe supports, fasteners, and stainless steel accessories. Safety · Cleanliness · Strength.</p>
+                <div class="foot-social">
+                    <a href="#" class="fsoc" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" class="fsoc" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="fsoc" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="#" class="fsoc" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="foot-head">Quick Links</h6>
+                <ul class="foot-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Products</a></li>
+                    <li><a href="why-us.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Why Choose Us</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6 class="foot-head">Product Range</h6>
+                <ul class="foot-links">
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Perforated Cable Tray</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Ladder Type Cable Tray</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>SS Wire Mesh Tray</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Pipe Support Clamps</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Threaded &amp; Tie Rods</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Anchor Fasteners &amp; Bolts</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right" aria-hidden="true"></i>Strut Channel &amp; Z Bracket</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h6 class="foot-head">Contact Us</h6>
+                <div class="foot-ci"><i class="fas fa-industry" aria-hidden="true"></i><span>KAPTECH TRAY AND PIPE SUPPORTS PVT. LTD.</span></div>
+                <div class="foot-ci"><i class="fas fa-phone-alt" aria-hidden="true"></i><a href="tel:9072114116" style="color:#555;text-decoration:none;">9072 114 116</a></div>
+                <div class="foot-ci"><i class="fab fa-whatsapp" style="color:#25D366;" aria-hidden="true"></i><a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" style="color:#25D366;text-decoration:none;">+91 9072 114 116</a></div>
+                <div class="foot-ci"><i class="fas fa-clock" aria-hidden="true"></i><span>Mon – Sat: 9:00 AM – 6:00 PM</span></div>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" class="foot-wa-btn" aria-label="Get a quick quote on WhatsApp">
+                    <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i>Get Quick Quote
+                </a>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p>&copy; 2025 <span>KAPTECH</span> Tray and Pipe Supports Pvt. Ltd. All rights reserved.</p>
+            <p>Designed for <span>industrial excellence</span></p>
+        </div>
+    </div>
+</footer>
+
+<div class="wa-float">
+    <span class="wa-tip">Chat with us!</span>
+    <a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" class="wa-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+</div>
+<a href="#" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="shared.js"></script>
+</body>
+</html>

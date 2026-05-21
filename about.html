@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About KAPTECH Tray and Pipe Supports Pvt. Ltd. — Trusted manufacturer of Cable Trays, Pipe Support Clamps and Fasteners. Our story, values, and manufacturing process.">
+    <meta name="keywords" content="about kaptech, kaptech manufacturer, cable tray manufacturer india, pipe support manufacturer, industrial fastener supplier">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About KAPTECH — Industrial Cable Tray & Pipe Support Manufacturer">
+    <meta property="og:description" content="Trusted manufacturer of Cable Trays, Pipe Support Clamps and Fasteners. Safety · Cleanliness · Strength.">
+    <meta property="og:image" content="main-logo.png">
+    <title>About Us — KAPTECH | Industrial Cable Tray &amp; Pipe Support Manufacturer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* ── NAVBAR LOGO ── */
+        .nav-logo-img { height: 42px; width: auto; display: block; }
+        .buildtech-badge {
+            display: flex; flex-direction: column; align-items: flex-end;
+            border-left: 1px solid rgba(255,255,255,.1);
+            padding-left: 16px; margin-left: 6px;
+        }
+        .buildtech-badge .bt-by { font-size: .5rem; color: #555; text-transform: uppercase; letter-spacing: 1.5px; line-height: 1; }
+        .buildtech-badge .bt-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; color: #777; letter-spacing: 3px; line-height: 1.1; }
+        .buildtech-badge .bt-name span { color: var(--red); }
+        @media (max-width: 768px) { .buildtech-badge { display: none; } }
+
+        /* ── ABOUT BODY ── */
+        #about-main { padding: 100px 0; background: var(--white); }
+        .about-img {
+            width: 100%; height: 500px;
+            object-fit: cover; border-radius: 6px; display: block;
+            box-shadow: 10px 10px 0 var(--red);
+        }
+        .about-img-wrap { position: relative; padding-bottom: 28px; }
+        .about-badge {
+            position: absolute; bottom: 6px; left: -16px;
+            background: var(--red); color: var(--white);
+            padding: 20px 24px; border-radius: 4px; text-align: center;
+            min-width: 130px; box-shadow: 0 8px 28px rgba(255,0,9,.35);
+        }
+        .about-badge .num { font-size: 2.2rem; font-weight: 900; line-height: 1; display: block; }
+        .about-badge .lbl { font-size: .6rem; text-transform: uppercase; letter-spacing: 1.2px; opacity: .9; }
+        .about-feat {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 14px 0; border-bottom: 1px solid #f0f0f0;
+        }
+        .about-feat:last-of-type { border-bottom: none; }
+        .af-icon {
+            width: 44px; height: 44px; flex-shrink: 0;
+            background: rgba(255,0,9,.07); border: 1px solid rgba(255,0,9,.18);
+            border-radius: 4px; display: flex; align-items: center; justify-content: center;
+            color: var(--red); font-size: 1.05rem; transition: all .3s;
+        }
+        .about-feat:hover .af-icon { background: var(--red); color: var(--white); border-color: var(--red); }
+        .af-text h6 { font-weight: 700; font-size: .88rem; margin-bottom: 3px; }
+        .af-text p  { font-size: .81rem; color: #888; margin: 0; line-height: 1.55; }
+
+        /* ── STATS BAND ── */
+        #stats-band { padding: 70px 0; background: var(--red); }
+        .stat-item { text-align: center; }
+        .stat-num { font-size: 3rem; font-weight: 900; color: var(--white); line-height: 1; }
+        .stat-lbl { font-size: .72rem; color: rgba(255,255,255,.75); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; }
+        .stat-sep { width: 1px; background: rgba(255,255,255,.2); align-self: stretch; }
+
+        /* ── VALUES ── */
+        #values { padding: 90px 0; background: var(--black); }
+        .val-card {
+            background: #141414; border: 1px solid #222;
+            border-radius: 6px; padding: 36px 24px; text-align: center; height: 100%;
+            transition: all .3s; position: relative; overflow: hidden;
+        }
+        .val-card::after {
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 0; height: 3px; background: var(--red); transition: width .4s;
+        }
+        .val-card:hover { transform: translateY(-6px); border-color: rgba(255,0,9,.3); background: #1c1c1c; }
+        .val-card:hover::after { width: 100%; }
+        .val-icon {
+            width: 70px; height: 70px;
+            background: rgba(255,0,9,.1); border: 1px solid rgba(255,0,9,.25);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.7rem; color: var(--red); margin: 0 auto 20px; transition: all .3s;
+        }
+        .val-card:hover .val-icon { background: var(--red); color: var(--white); border-color: var(--red); }
+        .val-card h5 { font-weight: 800; font-size: 1rem; margin-bottom: 10px; color: var(--white); }
+        .val-card p  { font-size: .84rem; color: #666; line-height: 1.7; margin: 0; }
+
+        /* ── MANUFACTURING ── */
+        #manufacturing { padding: 90px 0; background: var(--bg-light); }
+        .mfg-step {
+            display: flex; gap: 20px; align-items: flex-start;
+            padding: 22px 0; border-bottom: 1px solid #e8e8e8;
+        }
+        .mfg-step:last-child { border-bottom: none; }
+        .mfg-num {
+            width: 48px; height: 48px; flex-shrink: 0;
+            background: var(--red); color: var(--white);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: .95rem; font-weight: 900;
+        }
+        .mfg-text h6 { font-weight: 700; font-size: .95rem; margin-bottom: 5px; color: #1a1a1a; }
+        .mfg-text p  { font-size: .85rem; color: #888; margin: 0; line-height: 1.6; }
+
+        /* ── ABOUT CTA ── */
+        #about-cta { padding: 80px 0; background: var(--red); }
+        .about-cta-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+        .about-cta-inner h2 { font-size: clamp(1.8rem,3vw,2.5rem); font-weight: 900; color: var(--white); margin-bottom: 14px; }
+        .about-cta-inner p  { color: rgba(255,255,255,.8); font-size: .97rem; line-height: 1.75; margin-bottom: 30px; }
+        .btn-white-cta {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: var(--white); color: var(--red); text-decoration: none;
+            padding: 13px 32px; font-weight: 800; font-size: .88rem;
+            letter-spacing: .5px; text-transform: uppercase; border-radius: 3px; transition: all .25s;
+        }
+        .btn-white-cta:hover { background: var(--black); color: var(--white); transform: translateY(-2px); }
+        .btn-wa-cta {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: transparent; color: var(--white); text-decoration: none;
+            border: 2px solid rgba(255,255,255,.5);
+            padding: 11px 30px; font-weight: 700; font-size: .88rem;
+            letter-spacing: .5px; text-transform: uppercase; border-radius: 3px; transition: all .25s;
+        }
+        .btn-wa-cta:hover { border-color: var(--white); background: rgba(255,255,255,.1); color: var(--white); }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="nav-brand" aria-label="KAPTECH Home">
+                <img src="main-logo.png" alt="KAPTECH Tray and Pipe Supports Pvt. Ltd. Logo" class="nav-logo-img">
+            </a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="about.html"    class="nav-link active-page">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="why-us.html"   class="nav-link">Why Us</a>
+                <a href="gallery.html"  class="nav-link">Gallery</a>
+                <a href="contact.html"  class="nav-link">Contact</a>
+                <a href="tel:9072114116" class="nav-link nav-cta ms-2"><i class="fas fa-phone-alt me-1" aria-hidden="true"></i>9072 114 116</a>
+                <div class="buildtech-badge" aria-label="Authorized Partner: Buildtech">
+                    <span class="bt-by">Authorized by</span>
+                    <span class="bt-name">BUILD<span>TECH</span></span>
+                </div>
+            </div>
+            <button class="nav-toggler d-lg-none" onclick="toggleNav()" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="mobileMenu">
+            <a href="about.html"    class="nav-link" onclick="toggleNav()">About</a>
+            <a href="products.html" class="nav-link" onclick="toggleNav()">Products</a>
+            <a href="why-us.html"   class="nav-link" onclick="toggleNav()">Why Us</a>
+            <a href="gallery.html"  class="nav-link" onclick="toggleNav()">Gallery</a>
+            <a href="contact.html"  class="nav-link" onclick="toggleNav()">Contact</a>
+            <a href="tel:9072114116" class="btn-primary-red d-inline-flex mt-2" style="font-size:.78rem;padding:10px 20px;">
+                <i class="fas fa-phone-alt"></i>9072 114 116
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="page-hero-tag"><i class="fas fa-building"></i>Who We Are</div>
+            <h1>About <span>KAPTECH</span></h1>
+            <p>A trusted name in industrial manufacturing — delivering precision-engineered cable tray systems, pipe supports, and fasteners built on Safety, Cleanliness &amp; Strength.</p>
+            <div class="breadcrumb-bar">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span style="color:#aaa;">About Us</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT MAIN -->
+<section id="about-main">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 reveal">
+                <div class="about-img-wrap">
+                    <img src="images/B-CABLE%20TRAY%20AND%20ACCESSORIES/B3-LADDER.png"
+                         alt="KAPTECH Ladder Type Cable Tray — manufactured in-house" class="about-img" loading="lazy">
+                    <div class="about-badge">
+                        <span class="num">10+</span>
+                        <span class="lbl">Years<br>Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 reveal" style="padding-left:clamp(0px,4vw,52px);">
+                <div class="section-tag"><i class="fas fa-industry"></i>Our Story</div>
+                <h2 class="section-title">Precision Engineering for<br><span>Industrial Excellence</span></h2>
+                <div class="divider"></div>
+                <p style="color:#555;line-height:1.85;font-size:.96rem;margin-bottom:14px;">
+                    <strong>KAPTECH TRAY AND PIPE SUPPORTS PRIVATE LIMITED</strong> is a leading manufacturer
+                    and supplier of premium industrial support systems. We specialise in delivering high-quality
+                    cable tray systems, pipe support solutions, fasteners, and stainless steel industrial
+                    accessories that meet the most demanding engineering standards.
+                </p>
+                <p style="color:#555;line-height:1.85;font-size:.96rem;margin-bottom:24px;">
+                    Our products are trusted across oil &amp; gas, power, construction, manufacturing, and
+                    infrastructure sectors. With state-of-the-art manufacturing processes and rigorous quality
+                    controls, every KAPTECH product embodies our brand promise:
+                    <strong style="color:var(--red);">Safety · Cleanliness · Strength</strong>.
+                </p>
+
+                <div class="about-feat">
+                    <div class="af-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="af-text">
+                        <h6>Cable Tray Systems</h6>
+                        <p>Perforated, Ladder, and Raceway types for complete cable management solutions</p>
+                    </div>
+                </div>
+                <div class="about-feat">
+                    <div class="af-icon"><i class="fas fa-wrench"></i></div>
+                    <div class="af-text">
+                        <h6>Pipe Support Solutions</h6>
+                        <p>U-Bolts, Saddle Clamps, Beam Supports, Clevis Hangers — full range</p>
+                    </div>
+                </div>
+                <div class="about-feat">
+                    <div class="af-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <div class="af-text">
+                        <h6>Fasteners &amp; Hardware</h6>
+                        <p>Anchor bolts, wedge anchors, nuts, bolts, washers in GI, SS 304/316 &amp; carbon steel</p>
+                    </div>
+                </div>
+                <div class="about-feat">
+                    <div class="af-icon"><i class="fas fa-wind"></i></div>
+                    <div class="af-text">
+                        <h6>Split AC Stands</h6>
+                        <p>Heavy-duty galvanised and stainless steel outdoor unit support stands</p>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 mt-4 flex-wrap">
+                    <a href="products.html" class="btn-primary-red"><i class="fas fa-boxes-stacked"></i>Our Products</a>
+                    <a href="contact.html"  class="btn-dark"><i class="fas fa-envelope"></i>Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS BAND -->
+<section id="stats-band">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 reveal">
+            <div class="stat-item">
+                <div class="stat-num">500+</div>
+                <div class="stat-lbl">Products</div>
+            </div>
+            <div class="stat-sep d-none d-md-block" style="height:60px;"></div>
+            <div class="stat-item">
+                <div class="stat-num">7</div>
+                <div class="stat-lbl">Categories</div>
+            </div>
+            <div class="stat-sep d-none d-md-block" style="height:60px;"></div>
+            <div class="stat-item">
+                <div class="stat-num">10+</div>
+                <div class="stat-lbl">Years Experience</div>
+            </div>
+            <div class="stat-sep d-none d-md-block" style="height:60px;"></div>
+            <div class="stat-item">
+                <div class="stat-num">100%</div>
+                <div class="stat-lbl">Quality Assured</div>
+            </div>
+            <div class="stat-sep d-none d-md-block" style="height:60px;"></div>
+            <div class="stat-item">
+                <div class="stat-num">PAN</div>
+                <div class="stat-lbl">India Delivery</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VALUES -->
+<section id="values">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <div class="section-tag justify-content-center" style="color:rgba(255,0,9,.85);"><i class="fas fa-heart"></i>Our Brand Values</div>
+            <h2 class="section-title" style="color:var(--white);">What <span>Drives</span> Us</h2>
+            <div class="divider center"></div>
+            <p class="section-lead text-center mx-auto" style="color:#666;">Three pillars that define every product we manufacture and every relationship we build.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 reveal">
+                <div class="val-card">
+                    <div class="val-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h5>Safety</h5>
+                    <p>Every product is engineered with safety as the first priority. Our cable trays, pipe supports, and fasteners are tested to ensure they perform reliably in critical industrial environments where failure is not an option.</p>
+                </div>
+            </div>
+            <div class="col-md-4 reveal">
+                <div class="val-card">
+                    <div class="val-icon"><i class="fas fa-star"></i></div>
+                    <h5>Cleanliness</h5>
+                    <p>Precision finishes, smooth edges, and immaculate galvanising define KAPTECH quality. Our products are manufactured to exacting tolerances in a clean, well-organised production environment.</p>
+                </div>
+            </div>
+            <div class="col-md-4 reveal">
+                <div class="val-card">
+                    <div class="val-icon"><i class="fas fa-hammer"></i></div>
+                    <h5>Strength</h5>
+                    <p>High-grade materials — GI, SS 304/316, and carbon steel — combined with advanced fabrication deliver structural integrity that outlasts the competition and keeps your installations secure for decades.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MANUFACTURING PROCESS -->
+<section id="manufacturing">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 reveal">
+                <div class="section-tag"><i class="fas fa-cogs"></i>How We Work</div>
+                <h2 class="section-title">Our <span>Manufacturing</span> Process</h2>
+                <div class="divider"></div>
+                <p class="section-lead" style="margin-bottom:0;">
+                    From raw material procurement to final quality inspection, every KAPTECH product passes through a rigorous multi-step manufacturing process ensuring consistent quality and performance.
+                </p>
+            </div>
+            <div class="col-lg-7 reveal">
+                <div class="mfg-step">
+                    <div class="mfg-num">01</div>
+                    <div class="mfg-text">
+                        <h6>Raw Material Selection</h6>
+                        <p>We source high-grade GI, stainless steel 304/316, and carbon steel exclusively from certified mills to ensure base material integrity.</p>
+                    </div>
+                </div>
+                <div class="mfg-step">
+                    <div class="mfg-num">02</div>
+                    <div class="mfg-text">
+                        <h6>Precision Cutting &amp; Forming</h6>
+                        <p>CNC cutting, punching, and roll-forming deliver exact dimensions and uniform perforations across every cable tray and channel.</p>
+                    </div>
+                </div>
+                <div class="mfg-step">
+                    <div class="mfg-num">03</div>
+                    <div class="mfg-text">
+                        <h6>Surface Treatment &amp; Galvanising</h6>
+                        <p>Hot-dip galvanising and electro-galvanising provide superior corrosion resistance across our full product range.</p>
+                    </div>
+                </div>
+                <div class="mfg-step">
+                    <div class="mfg-num">04</div>
+                    <div class="mfg-text">
+                        <h6>Quality Inspection</h6>
+                        <p>Dimensional, load, and finish checks are performed on each production batch before dispatch. Non-conforming parts are rejected.</p>
+                    </div>
+                </div>
+                <div class="mfg-step">
+                    <div class="mfg-num">05</div>
+                    <div class="mfg-text">
+                        <h6>Packaging &amp; Dispatch</h6>
+                        <p>Products are carefully packed to prevent transit damage and dispatched pan-India with full documentation and tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT CTA -->
+<section id="about-cta">
+    <div class="container">
+        <div class="about-cta-inner reveal">
+            <h2>Ready to Work with KAPTECH?</h2>
+            <p>Send us your requirements or get a quote within 24 hours. Our team is available Mon–Sat, 9 AM to 6 PM.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="contact.html" class="btn-white-cta"><i class="fas fa-envelope" aria-hidden="true"></i>Send Inquiry</a>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener noreferrer" class="btn-wa-cta">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <img src="main-logo.png" alt="KAPTECH Tray and Pipe Supports Pvt. Ltd." style="height:48px;width:auto;margin-bottom:14px;display:block;">
+                <p class="foot-desc">Premium manufacturer of industrial cable tray systems, pipe supports, fasteners, and stainless steel accessories. Safety · Cleanliness · Strength.</p>
+                <div class="foot-social">
+                    <a href="#" class="fsoc" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="fsoc" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="fsoc" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="fsoc" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="fsoc" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="foot-head">Quick Links</h6>
+                <ul class="foot-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Products</a></li>
+                    <li><a href="why-us.html"><i class="fas fa-chevron-right"></i>Why Choose Us</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6 class="foot-head">Product Range</h6>
+                <ul class="foot-links">
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Cable Tray Systems</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Channels &amp; Brackets</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Pipe Support Clamps</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Threaded &amp; Tie Rods</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Fasteners &amp; Anchors</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Tray Accessories</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i>Split AC Stands</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h6 class="foot-head">Contact Us</h6>
+                <div class="foot-ci"><i class="fas fa-industry"></i><span>KAPTECH TRAY AND PIPE SUPPORTS PVT. LTD.</span></div>
+                <div class="foot-ci"><i class="fas fa-phone-alt"></i><a href="tel:9072114116" style="color:#555;text-decoration:none;">9072 114 116</a></div>
+                <div class="foot-ci"><i class="fab fa-whatsapp" style="color:#25D366;"></i><a href="https://wa.me/919072114116" target="_blank" rel="noopener" style="color:#25D366;text-decoration:none;">+91 9072 114 116</a></div>
+                <div class="foot-ci"><i class="fas fa-clock"></i><span>Mon – Sat: 9:00 AM – 6:00 PM</span></div>
+                <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="foot-wa-btn">
+                    <i class="fab fa-whatsapp fa-lg"></i>Get Quick Quote
+                </a>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p>&copy; 2025 <span>KAPTECH</span> Tray and Pipe Supports Pvt. Ltd. All rights reserved.</p>
+            <p>Designed for <span>industrial excellence</span></p>
+        </div>
+    </div>
+</footer>
+
+<div class="wa-float">
+    <span class="wa-tip">Chat with us!</span>
+    <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="wa-btn" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<a href="#" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="shared.js"></script>
+</body>
+</html>
