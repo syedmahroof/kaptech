@@ -85,12 +85,7 @@
             position: absolute; inset: 0;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(255,0,9,0.04)' stroke-width='0.8'/%3E%3C/svg%3E");
         }
-        #hero::after {
-            content: ''; position: absolute; bottom: 0; left: 0;
-            width: 100%; height: 130px;
-            background: linear-gradient(to top, #fff, transparent);
-            pointer-events: none;
-        }
+
         .hero-inner { position: relative; z-index: 2; }
         .hero-badge {
             display: inline-flex; align-items: center; gap: 8px;
@@ -398,6 +393,7 @@
                 <img src="main-logo.png" alt="KAPTECH Tray and Pipe Supports Pvt. Ltd. Logo" class="nav-logo-img">
             </a>
             <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html"    class="nav-link active-page">Home</a>
                 <a href="about.html"    class="nav-link">About</a>
                 <a href="products.html" class="nav-link">Products</a>
                 <a href="why-us.html"   class="nav-link">Why Us</a>
@@ -416,6 +412,7 @@
             </button>
         </div>
         <div id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+            <a href="index.html"    class="nav-link active-page" onclick="toggleNav()">Home</a>
             <a href="about.html"    class="nav-link" onclick="toggleNav()">About</a>
             <a href="products.html" class="nav-link" onclick="toggleNav()">Products</a>
             <a href="why-us.html"   class="nav-link" onclick="toggleNav()">Why Us</a>
