@@ -46,29 +46,7 @@
             width: auto;
             display: block;
         }
-        .buildtech-badge {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            border-left: 1px solid rgba(255,255,255,.1);
-            padding-left: 16px;
-            margin-left: 6px;
-        }
-        .buildtech-badge .bt-by {
-            font-size: .5rem;
-            color: #555;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            line-height: 1;
-        }
-        .buildtech-badge .bt-name {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.15rem;
-            color: #777;
-            letter-spacing: 3px;
-            line-height: 1.1;
-        }
-        .buildtech-badge .bt-name span { color: var(--red); }
+
 
         /* ── HERO ── */
         #hero {
@@ -274,12 +252,7 @@
         .prod-img-body p {
             font-size: .71rem; color: #aaa; margin: 0; line-height: 1.45;
         }
-        .prod-num-badge {
-            position: absolute; top: 10px; left: 10px;
-            background: var(--red); color: var(--white);
-            font-size: .58rem; font-weight: 700; letter-spacing: 1px;
-            padding: 3px 8px; border-radius: 2px;
-        }
+
 
         /* ── CTA BAND ── */
         #cta-band { padding: 80px 0; background: var(--red); }
@@ -378,7 +351,7 @@
         @media (max-width: 768px) {
             .hstat { padding: 0 12px; }
             .spec-band { padding: 18px 16px; }
-            .buildtech-badge { display: none; }
+
             .cat-section-header { gap: 12px; }
         }
     </style>
@@ -402,10 +375,7 @@
                 <a href="tel:9072114116" class="nav-link nav-cta ms-2">
                     <i class="fas fa-phone-alt me-1" aria-hidden="true"></i>9072 114 116
                 </a>
-                <div class="buildtech-badge" aria-label="Authorized Partner: Buildtech">
-                    <span class="bt-by">Authorized by</span>
-                    <span class="bt-name">BUILD<span>TECH</span></span>
-                </div>
+
             </div>
             <button class="nav-toggler d-lg-none" onclick="toggleNav()" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span><span></span><span></span>

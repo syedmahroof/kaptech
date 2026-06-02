@@ -141,6 +141,8 @@ body {
 .breadcrumb-bar i { font-size: .55rem; color: #444; }
 
 /* ── PRODUCT CARDS ─────────────────────────────────────────── */
+.prod-num-badge { display: none !important; }
+
 .pcard {
     background: var(--white); border: 1px solid #eee; border-radius: 6px;
     padding: 26px 22px; height: 100%; position: relative; overflow: hidden;

@@ -20,15 +20,7 @@
     <style>
         /* ── NAVBAR LOGO ── */
         .nav-logo-img { height: 42px; width: auto; display: block; }
-        .buildtech-badge {
-            display: flex; flex-direction: column; align-items: flex-end;
-            border-left: 1px solid rgba(255,255,255,.1);
-            padding-left: 16px; margin-left: 6px;
-        }
-        .buildtech-badge .bt-by { font-size: .5rem; color: #555; text-transform: uppercase; letter-spacing: 1.5px; line-height: 1; }
-        .buildtech-badge .bt-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; color: #777; letter-spacing: 3px; line-height: 1.1; }
-        .buildtech-badge .bt-name span { color: var(--red); }
-        @media (max-width: 768px) { .buildtech-badge { display: none; } }
+
 
         /* ── PRODUCTS LAYOUT ── */
         #products-main { padding: 64px 0 0; }
@@ -109,12 +101,7 @@
             transition: transform .4s;
         }
         .prod-img-card:hover .prod-img-wrap img { transform: scale(1.07); }
-        .prod-num-badge {
-            position: absolute; top: 8px; left: 8px;
-            background: var(--red); color: var(--white);
-            font-size: .56rem; font-weight: 700; letter-spacing: 1px;
-            padding: 3px 7px; border-radius: 2px;
-        }
+
         .prod-img-body { padding: 12px 14px 14px; flex: 1; display: flex; flex-direction: column; gap: 3px; }
         .prod-img-body h6 { font-size: .78rem; font-weight: 700; color: #1a1a1a; margin: 0; line-height: 1.35; }
         .bg-dark .prod-img-body h6 { color: #ddd; }
@@ -167,10 +154,7 @@
                 <a href="tel:9072114116" class="nav-link nav-cta ms-2">
                     <i class="fas fa-phone-alt me-1" aria-hidden="true"></i>9072 114 116
                 </a>
-                <div class="buildtech-badge" aria-label="Authorized Partner: Buildtech">
-                    <span class="bt-by">Authorized by</span>
-                    <span class="bt-name">BUILD<span>TECH</span></span>
-                </div>
+
             </div>
             <button class="nav-toggler d-lg-none" onclick="toggleNav()" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span><span></span><span></span>
