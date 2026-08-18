@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KAPTECH Product Gallery — Cable Trays, Pipe Supports, Fasteners and Industrial Accessories in action.">
-    <title>Gallery — KAPTECH</title>
+    <meta name="description" content="KAPTECH Product Gallery â€” Cable Trays, Pipe Supports, Fasteners and Industrial Accessories in action.">
+    <title>Gallery â€” KAPTECH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="shared.css">
     <style>
-        /* ── FILTER TABS ── */
+        /* â”€â”€ FILTER TABS â”€â”€ */
         #gallery-main { padding: 80px 0 100px; background: var(--white); }
         .gfilter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
         .gfilter {
@@ -23,7 +23,7 @@
             background: var(--red); border-color: var(--red); color: var(--white);
         }
 
-        /* ── MASONRY GRID ── */
+        /* â”€â”€ MASONRY GRID â”€â”€ */
         .gallery-masonry {
             columns: 4;
             column-gap: 12px;
@@ -51,7 +51,7 @@
         .gitem:hover .gitem-overlay i { transform: scale(1); }
         .gitem-overlay span { font-size: .72rem; color: rgba(255,255,255,.8); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
 
-        /* ── LIGHTBOX ── */
+        /* â”€â”€ LIGHTBOX â”€â”€ */
         #lightbox {
             display: none; position: fixed; inset: 0; z-index: 9998;
             background: rgba(0,0,0,.92); align-items: center; justify-content: center;
@@ -126,7 +126,7 @@
         <div class="page-hero-inner">
             <div class="page-hero-tag"><i class="fas fa-images"></i>Visual Showcase</div>
             <h1>Product <span>Gallery</span></h1>
-            <p>A visual showcase of our industrial cable tray systems, pipe support solutions, fasteners, and accessories — built for performance, engineered to last.</p>
+            <p>A visual showcase of our industrial cable tray systems, pipe support solutions, fasteners, and accessories â€” built for performance, engineered to last.</p>
             <div class="breadcrumb-bar">
                 <a href="index.html">Home</a>
                 <i class="fas fa-chevron-right"></i>
@@ -151,114 +151,112 @@
 
         <!-- Masonry Grid -->
         <div class="gallery-masonry reveal" id="galleryGrid">
-
-            <div class="gitem" data-cat="cable-tray" data-caption="Perforated Cable Tray" onclick="openLightbox(0)">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Cable Tray Installation" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Cable Tray</span></div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(0)">
+                <img src="images/New Pics/1.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-
-            <div class="gitem" data-cat="manufacturing" data-caption="KAPTECH Manufacturing Facility" onclick="openLightbox(1)">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Manufacturing Facility" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Manufacturing</span></div>
-            </div>
-
-            <div class="gitem" data-cat="pipe-support" data-caption="Industrial Pipe Support System" onclick="openLightbox(2)">
-                <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=600&q=80" alt="Pipe Support" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Pipe Support</span></div>
-            </div>
-
-            <div class="gitem" data-cat="fasteners" data-caption="Stainless Steel Fasteners" onclick="openLightbox(3)">
-                <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=600&q=80" alt="Steel Products" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Fasteners</span></div>
-            </div>
-
-            <div class="gitem" data-cat="cable-tray" data-caption="Ladder Type Cable Tray" onclick="openLightbox(4)">
-                <img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=600&q=80" alt="Cable Tray Ladder" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Cable Tray</span></div>
-            </div>
-
-            <div class="gitem" data-cat="manufacturing" data-caption="Quality Control Process" onclick="openLightbox(5)">
-                <img src="https://images.unsplash.com/photo-1565726166189-6b0a5e4f8bd9?w=600&q=80" alt="Quality Control" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Manufacturing</span></div>
-            </div>
-
-            <div class="gitem" data-cat="pipe-support" data-caption="Pipe Clamp Installation" onclick="openLightbox(6)">
-                <img src="https://images.unsplash.com/photo-1786840227651-4362347bf499?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGlwZSUyMGNsYW1wfGVufDB8fDB8fHww" alt="Pipe Clamp" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Pipe Support</span></div>
-            </div>
-
-            <div class="gitem" data-cat="fasteners" data-caption="Anchor Bolts and Hardware" onclick="openLightbox(7)">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Hardware" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Fasteners</span></div>
-            </div>
-
-            <div class="gitem" data-cat="cable-tray" data-caption="Raceway Cable Tray System" onclick="openLightbox(8)">
-                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Raceway" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Cable Tray</span></div>
-            </div>
-
-            <div class="gitem" data-cat="manufacturing" data-caption="Steel Fabrication Workshop" onclick="openLightbox(9)">
-                <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&q=80" alt="Workshop" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Manufacturing</span></div>
-            </div>
-
-            <div class="gitem" data-cat="pipe-support" data-caption="U-Bolt Pipe Support" onclick="openLightbox(10)">
-                <img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?w=600&q=80" alt="U-Bolt" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Pipe Support</span></div>
-            </div>
-
-            <div class="gitem" data-cat="fasteners" data-caption="GI Slotted Channel" onclick="openLightbox(11)">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Slotted Channel" loading="lazy">
-                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Channels</span></div>
-            </div>
-
-            <!-- Newly added photos -->
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(12)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(1)">
                 <img src="images/New Pics/2.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(13)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(2)">
                 <img src="images/New Pics/3.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(14)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(3)">
                 <img src="images/New Pics/4.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(15)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(4)">
                 <img src="images/New Pics/5.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(16)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(5)">
                 <img src="images/New Pics/6.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(17)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(6)">
                 <img src="images/New Pics/7.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(18)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(7)">
                 <img src="images/New Pics/8.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(19)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(8)">
                 <img src="images/New Pics/9.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(20)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(9)">
                 <img src="images/New Pics/10.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(21)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(10)">
                 <img src="images/New Pics/11.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(22)">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(11)">
                 <img src="images/New Pics/12.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
-            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Facility & Products" onclick="openLightbox(23)">
-                <img src="images/New Pics/WhatsApp Image 2026-08-17 at 8.43.54 PM.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(12)">
+                <img src="images/New Pics/13.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(13)">
+                <img src="images/New Pics/14.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(14)">
+                <img src="images/New Pics/15.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(15)">
+                <img src="images/New Pics/16.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(16)">
+                <img src="images/New Pics/17.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(17)">
+                <img src="images/New Pics/18.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(18)">
+                <img src="images/New Pics/19.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(19)">
+                <img src="images/New Pics/20.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(20)">
+                <img src="images/New Pics/21.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(21)">
+                <img src="images/New Pics/22.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(22)">
+                <img src="images/New Pics/23.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(23)">
+                <img src="images/New Pics/24.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(24)">
+                <img src="images/New Pics/25.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(25)">
+                <img src="images/New Pics/26.jpeg" alt="Kaptech Gallery Image" loading="lazy">
+                <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
+            </div>
+            <div class="gitem" data-cat="manufacturing" data-caption="Kaptech Gallery Image" onclick="openLightbox(26)">
+                <img src="images/New Pics/WhatsApp%20Image%202026-08-17%20at%208.43.54%20PM.jpeg" alt="Kaptech Gallery Image" loading="lazy">
                 <div class="gitem-overlay"><i class="fas fa-magnifying-glass-plus"></i><span>Gallery</span></div>
             </div>
 
@@ -281,7 +279,7 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <span class="foot-brand-kap">KAP</span><span class="foot-brand-tech">TECH</span>
-                <p class="foot-desc">Premium manufacturer of industrial cable tray systems, pipe supports, fasteners, and stainless steel accessories. Safety · Cleanliness · Strength.</p>
+                <p class="foot-desc">Premium manufacturer of industrial cable tray systems, pipe supports, fasteners, and stainless steel accessories. Safety Â· Cleanliness Â· Strength.</p>
                 <div class="foot-social">
                     <a href="#" class="fsoc" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="fsoc" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -318,7 +316,7 @@
                 <div class="foot-ci"><i class="fas fa-industry"></i><span>KAPTECH TRAY AND PIPE SUPPORTS PVT. LTD.</span></div>
                 <div class="foot-ci"><i class="fas fa-phone-alt"></i><a href="tel:9072114116" style="color:#555;text-decoration:none;">9072 114 116</a></div>
                 <div class="foot-ci"><i class="fab fa-whatsapp" style="color:#25D366;"></i><a href="https://wa.me/919072114116" target="_blank" rel="noopener" style="color:#25D366;text-decoration:none;">+91 9072 114 116</a></div>
-                <div class="foot-ci"><i class="fas fa-clock"></i><span>Mon – Sat: 9:00 AM – 6:00 PM</span></div>
+                <div class="foot-ci"><i class="fas fa-clock"></i><span>Mon â€“ Sat: 9:00 AM â€“ 6:00 PM</span></div>
                 <a href="https://wa.me/919072114116" target="_blank" rel="noopener" class="foot-wa-btn">
                     <i class="fab fa-whatsapp fa-lg"></i>Get Quick Quote
                 </a>
@@ -342,7 +340,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="shared.js"></script>
 <script>
-/* ── Gallery Filter ──────────────────────────────────── */
+/* â”€â”€ Gallery Filter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 function filterGallery(cat, btn) {
     document.querySelectorAll('.gfilter').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
@@ -358,7 +356,7 @@ function filterGallery(cat, btn) {
     });
 }
 
-/* ── Lightbox ────────────────────────────────────────── */
+/* â”€â”€ Lightbox â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const items = document.querySelectorAll('.gitem');
 let currentIdx = 0;
 
@@ -392,3 +390,4 @@ document.getElementById('lightbox').addEventListener('click', e => {
 </script>
 </body>
 </html>
+
